@@ -280,15 +280,15 @@ These outputs provide comprehensive insights into how well the models perform, i
 
 | Model     | Accuracy | Precision | Recall | Test Time (s) |
 |-----------|----------|-----------|--------|---------------|
-| CNN       | 99%      | 99%       | 99%    | 0.263         |
+| CNN       | 99.03%      | 99.03%       | 99.03%    | 0.263         |
 | SVM Linear| 92.16%   | 92.17%    | 92.16% | 19.26         |
 | SVM RBF   | 95.94%   | 95.97%    | 95.94% | 15.38         |
 | SVM Poly  | 95.02%   | 95.11%    | 95.02% | 23.33         |
 
 The **CNN** model achieved the highest performance across all evaluation metrics:
-- **Accuracy**: 99%
-- **Precision**: 99%
-- **Recall**: 99%
+- **Accuracy**: 99.03%
+- **Precision**: 99.03%
+- **Recall**: 99.03%
 - **Test Time**: 0.263 seconds
 
 The **SVM RBF** kernel achieved the best performance among the SVM models, with:
