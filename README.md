@@ -318,9 +318,12 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
   <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/rbf/confusion_matrix.png?raw=true" alt="SVM RBF Confusion Matrix" width="400"/>
 </p>
 
-
-<img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/Linera/confusion_matrix.png?raw=true" alt="CNN Confusion Matrix" width="400"/>
-
+**trainig curves**
+**CNN**
+<p align="center">
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/CNN/Train Loss and Accuracy over Epochs.png?raw=true" alt="CNN Confusion Matrix" width="400"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/CNN/Validation Loss and Accuracy over Epochs.png?raw=true" alt="SVM Linear Confusion Matrix" width="400"/>
+</p>
 
 .
 .
