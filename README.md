@@ -307,7 +307,7 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
 
 **confusion matrices**
 .
-.
+.Plots/CNN/confusion_matrix.png
 .
 
 .
