@@ -184,8 +184,6 @@ Drawing Menu:
 4.Return to Main Menu
 
 
-
-
 #### Options Overview:
 
 - **1. Draw and Save Digit**:  
@@ -212,8 +210,10 @@ Drawing Menu:
   - Select a specific image to display it in a pop-up window.
 **Normalized Image:**
 ![FOUR](https://github.com/user-attachments/assets/464d6aae-6334-458f-b74c-85779f413efb)
+
 **Non-Normalized Image:**
 ![FOUR](https://github.com/user-attachments/assets/ce12ab30-55c0-4282-ac9f-d7b3f4f20099)
+
 - **0. Return to Main Menu**:  
   Returns to the main project menu.
 
