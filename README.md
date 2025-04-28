@@ -281,9 +281,9 @@ These outputs provide comprehensive insights into how well the models perform, i
 | Model     | Accuracy | Precision | Recall | Test Time (s) |
 |-----------|----------|-----------|--------|---------------|
 | CNN       | 99.03%      | 99.03%       | 99.03%    | 0.263         |
-| SVM Linear| 92.16%   | 92.17%    | 92.16% | 19.26         |
-| SVM RBF   | 95.94%   | 95.97%    | 95.94% | 15.38         |
-| SVM Poly  | 95.02%   | 95.11%    | 95.02% | 23.33         |
+| SVM Linear| 92.16%   | 92.17%    | 92.16% | 9.50         |
+| SVM RBF   | 95.94%   | 95.97%    | 95.94% | 27.18         |
+| SVM Poly  | 95.02%   | 95.11%    | 95.02% | 18.96        |
 
 The **CNN** model achieved the highest performance across all evaluation metrics:
 - **Accuracy**: 99.03%
@@ -295,11 +295,11 @@ The **SVM RBF** kernel achieved the best performance among the SVM models, with:
 - **Accuracy**: 95.94%
 - **Precision**: 95.97%
 - **Recall**: 95.94%
-- **Test Time**: 15.38 seconds
+- **Test Time**: 27.18 seconds
 
-The **SVM Polynomial** kernel also performed well, slightly below the RBF kernel but with a longer test time of 23.33 seconds.
+The **SVM Polynomial** kernel also performed well, slightly below the RBF kernel but with a shorter test time of 18.96 seconds.
 
-The **SVM Linear** kernel had the lowest accuracy (92.16%) but was the most efficient in terms of test time (19.26 seconds).
+The **SVM Linear** kernel had the lowest accuracy (92.16%) but was the most efficient in terms of test time (9.50 seconds).
 
 Overall, the **CNN** model outperformed all SVM models both in accuracy and in computational efficiency, making it the preferred choice for handwritten digit classification on the MNIST dataset.
 
@@ -309,6 +309,7 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
 .
 .
 .
+
 .
 .
 .
