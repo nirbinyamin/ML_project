@@ -328,32 +328,32 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
 **trainig curves**
 **SVM**
 <p align="center">
-  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_linear.png?raw=true" alt="SVM Polynomial Confusion Matrix" width="300"/>
-  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_poly.png?raw=true" alt="SVM RBF Confusion Matrix" width="300"/>
-  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_rbf.png?raw=true" alt="SVM RBF Confusion Matrix" width="300"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_linear.png?raw=true" alt="SVM Polynomial Confusion Matrix" width="400"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_poly.png?raw=true" alt="SVM RBF Confusion Matrix" width="400"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_rbf.png?raw=true" alt="SVM RBF Confusion Matrix" width="400"/>
   
 </p>
 
 **misclassified CNN**
 <p align="center">
-  <img src="https://github.com/nirbinyamin/ML_project/blob/main/False predict/CNN/true_4_pred_9_1.png?raw=true" alt="CNN Confusion Matrix" width="300"/>
-  <img src="https://github.com/nirbinyamin/ML_project/blob/main/False predict/CNN/true_9_pred_4_2.png?raw=true" alt="CNN Confusion Matrix" width="300"/>
-  <img src="https://github.com/nirbinyamin/ML_project/blob/main/False predict/CNN/true_6_pred_0_3.png?raw=true" alt="CNN Confusion Matrix" width="300"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/False predict/CNN/true_4_pred_9_1.png?raw=true" alt="CNN Confusion Matrix" width="400"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/False predict/CNN/true_9_pred_4_2.png?raw=true" alt="CNN Confusion Matrix" width="400"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/False predict/CNN/true_6_pred_0_3.png?raw=true" alt="CNN Confusion Matrix" width="400"/>
 </p>
 
 **misclassified SVM**
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/poly/true_5_pred_4_1.png?raw=true" alt="SVM Polynomial Misclassified" width="300"/><br/>
+      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/poly/true_5_pred_4_1.png?raw=true" alt="SVM Polynomial Misclassified" width="400"/><br/>
       <b>Polynomial Kernel</b>
     </td>
     <td align="center">
-      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/rbf/true_4_pred_0_2.png?raw=true" alt="SVM RBF Misclassified" width="300"/><br/>
+      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/rbf/true_4_pred_0_2.png?raw=true" alt="SVM RBF Misclassified" width="400"/><br/>
       <b>RBF Kernel</b>
     </td>
     <td align="center">
-      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/linear/true_9_pred_4_3.png?raw=true" alt="SVM Linear Misclassified" width="300"/><br/>
+      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/linear/true_9_pred_4_3.png?raw=true" alt="SVM Linear Misclassified" width="400"/><br/>
       <b>Linear Kernel</b>
     </td>
   </tr>
