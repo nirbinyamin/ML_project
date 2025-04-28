@@ -230,6 +230,52 @@ When saving a drawn digit, the system:
 
 This ensures that your drawn digits are processed in the same way as the MNIST data, improving classification accuracy.
 
+## Evaluation Metrics & Outputs
 
+During training and testing, various outputs are generated to help evaluate the models' performance. These outputs are automatically saved in the following directories:
+
+### 1. Models
+
+- **Directory**: `Models/`
+- **Contents**:
+  - `cnn_best_model.pth`: The best-performing CNN model, saved after each epoch where validation loss improves.
+  - `svm_linear.pkl`, `svm_rbf.pkl`, `svm_poly.pkl`: The best SVM models for each kernel (Linear, RBF, Polynomial), selected via Grid Search with 5-fold cross-validation.
+
+### 2. Plots
+
+- **Directory**: `Plots/`
+- **Contents**:
+  - `Plots/CNN/`: Contains CNN training and validation plots:
+    - `Train Loss and Accuracy over Epochs.png`
+    - `Validation Loss and Accuracy over Epochs.png`
+    - `confusion_matrix.png`: Confusion matrix of CNN predictions.
+  - `Plots/SVM/`: Contains Grid Search accuracy plots for each kernel and confusion matrices:
+    - `grid_search_accuracy_linear.png`
+    - `grid_search_accuracy_rbf.png`
+    - `grid_search_accuracy_poly.png`
+    - `confusion_matrix.png` (for each kernel in separate subdirectories).
+
+### 3. Metrics
+
+- **Directory**: `Metrics/`
+- **Contents**:
+  - `Metrics/CNN/metrics.txt`: Contains the following evaluation metrics for the CNN model:
+    - Accuracy
+    - Precision (weighted)
+    - Recall (weighted)
+    - Confusion Matrix
+    - Test Time (in seconds)
+  - `Metrics/SVM_linear/metrics.txt`, `Metrics/SVM_rbf/metrics.txt`, `Metrics/SVM_poly/metrics.txt`: Contain the same metrics for each SVM kernel.
+
+### 4. Misclassified Examples
+
+- **Directory**: `False predict/`
+- **Contents**:
+  - `False predict/CNN/`: Up to three misclassified test images from the CNN, saved with filenames indicating the true and predicted labels (e.g., `true_4_pred_9_1.png`).
+  - `False predict/SVM/<kernel>/`: Up to three misclassified test images for each SVM kernel.
+
+These outputs provide comprehensive insights into how well the models perform, including accuracy metrics, confusion matrices to identify misclassification patterns, and visual examples of errors.
+
+## Results
 
 
