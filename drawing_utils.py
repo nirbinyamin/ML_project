@@ -220,11 +220,13 @@ def center_and_resize(img_array, canvas_size=280, target_size=28):
         print("No digit found.")
         return np.zeros((target_size, target_size), dtype=np.uint8)
 
-
+    
     # Crop
     img_cropped = img_array[top:bottom+1, left:right+1]
     img_cropped_inverted = 255 - img_cropped
-
+    
+    img_pil_cropped = Image.fromarray(img_cropped_inverted)
+    
     # Pad to canvas_size
     width, height = img_pil_cropped.size
     canvas = Image.new('L', (canvas_size, canvas_size), color=0)
