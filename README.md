@@ -80,11 +80,14 @@ The SVM classifier is trained to classify digits using flattened image vectors (
   - gamma: ['scale', 0.01, 0.1] (for RBF and Polynomial)
   - degree: [2, 3, 4] (for Polynomial)
 
-The best hyperparameters for each kernel are selected based on validation accuracy.
+Grid Search with 5-fold cross-validation is used to automatically select the best hyperparameters for each kernel, based on cross-validation accuracy computed on the training set.
 
 **Note on 'scale' for gamma**:
 The `'scale'` option for the `gamma` parameter in SVM automatically sets `gamma = 1 / (n_features * X.var())`, where `n_features` is the number of features (784 for MNIST) and `X.var()` is the variance of the training data. This helps adapt the gamma value based on the data's distribution, providing a good default for RBF and Polynomial kernels.
 
+**Validation Strategy Difference (CNN vs. SVM)**:
+- For **CNN**, the training set is explicitly split into a training subset and a separate development (validation) set. The model is trained on the training subset, and performance is monitored on the validation set for early stopping and hyperparameter tuning.
+- For **SVM**, there is no separate validation set. Instead, **5-fold cross-validation** is applied directly on the training data via Grid Search. This ensures that hyperparameter selection (e.g., C, gamma, degree) is robust by averaging
 
 ## Project Structure
 
@@ -105,3 +108,65 @@ The project is organized into the following main files and directories:
 ├── Metrics/ # Evaluation metrics (accuracy, precision, recall, etc.) saved as text files 
 ├── UserDrawings/ # User-drawn digit images and corresponding normalized NumPy arrays
 ```
+
+## Setting the files
+
+In order to get the project running, you will need to download the following items:
+
+1. **Models** (provided as `Models.rar`)
+2. **Scalers** (provided as part of the models)
+3. **Data** (provided as `data.rar`)
+
+- **Extract** the contents of `Models.rar` into the `Models/` directory.
+- **Extract** the contents of `data.rar` into the `data/` directory.
+
+Finally, **download** all the Python source files and set `ML_Project.py` as the main file to run the project.
+
+## Running the project
+
+When you first run the project, it will automatically extract and preprocess the raw MNIST data from the `data/` directory. The processed data will be saved as `.npy` files in the `data_numpy/` directory for faster loading in future runs, eliminating the need to extract and preprocess the dataset each time.
+
+### The Menu
+When running `ML_Project.py`, you will be presented with the following menu:
+
+Menu:
+1.Train CNN
+2.Test CNN
+3.Train SVM
+4.Test SVM
+5.Visualize Data used for CNN
+6.Visualize Data used for SVM
+7.Evaluate CNN Metrics
+8.Evaluate SVM Metrics
+9.Display Best SVM Models
+10.Drawing Menu
+Exit
+
+
+Each option allows you to perform different tasks within the project:
+
+- **1. Train CNN**: Trains the CNN model on the MNIST dataset, applying early stopping based on validation loss. The best model is saved in the `Models/` directory.
+
+- **2. Test CNN**: Evaluates the trained CNN model on the test set, displays performance metrics (accuracy, precision, recall), saves the confusion matrix, and stores up to three misclassified digit images.
+
+- **3. Train SVM**: Trains three separate SVM models (Linear, RBF, Polynomial) using Grid Search with 5-fold cross-validation to find optimal hyperparameters. The trained models are saved in the `Models/` directory.
+
+- **4. Test SVM**: Evaluates each SVM model on the test set, displays metrics, saves confusion matrices, and stores misclassified examples for each kernel.
+
+- **5. Visualize Data used for CNN**: Displays label distributions and sample images for the training, development, and test sets used by the CNN.
+
+- **6. Visualize Data used for SVM**: Displays label distributions and sample images for the SVM training set (10,000 samples) and test set.
+
+- **7. Evaluate CNN Metrics**: Loads and displays the saved CNN evaluation metrics from `Metrics/CNN/metrics.txt`.
+
+- **8. Evaluate SVM Metrics**: Loads and displays the saved evaluation metrics for all three SVM models from the `Metrics/` directory.
+
+- **9. Display Best SVM Models**: Shows the best hyperparameters (C, gamma, degree) for each SVM kernel, selected during Grid Search.
+
+- **10. Drawing Menu**: Opens an interactive GUI where you can:
+  - Draw digits on a canvas.
+  - Save the raw and normalized versions of your drawings.
+  - Classify your drawings using the trained CNN and SVM models.
+  - View saved drawings.
+
+- **0. Exit**: Exits the program.
