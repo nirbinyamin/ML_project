@@ -308,8 +308,10 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
 **confusion matrices**
 ![Confusion Matrix](https://github.com/your-username/your-repo-name/blob/main/Plots/CNN/confusion_matrix.png?raw=true)
 
+![Confusion Matrix](https://github.com/nirbinyamin/ML_project/blob/main/Plots/CNN/confusion_matrix.png?raw=true)
 
-.
+
+
 
 .
 .
