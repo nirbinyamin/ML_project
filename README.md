@@ -27,7 +27,8 @@ This ensures consistent input formatting between the MNIST dataset and the user-
 **MNIST Dataset Source:**  
 [https://www.kaggle.com/datasets/hojjatk/mnist-dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
+---
 > **Notes:**  
 > - For the **CNN**, the full training set (54,000 images) and development set (6,000 images) were used.  
 > - For the **SVM**, only a subset of **10,000 images** was used for training to reduce runtime, as SVMs can be computationally intensive on large datasets.
-> - 33
+---
