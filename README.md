@@ -342,19 +342,19 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
 </p>
 
 **misclassified SVM**
-<p align="center">
-  <figure style="display: inline-block; text-align: center; margin: 10px;">
-    <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/poly/true_5_pred_4_1.png?raw=true" alt="SVM Polynomial Misclassified" width="300"/>
-    <figcaption><b>Polynomial Kernel</b></figcaption>
-  </figure>
-
-  <figure style="display: inline-block; text-align: center; margin: 10px;">
-    <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/rbf/true_4_pred_0_2.png?raw=true" alt="SVM RBF Misclassified" width="300"/>
-    <figcaption><b>RBF Kernel</b></figcaption>
-  </figure>
-
-  <figure style="display: inline-block; text-align: center; margin: 10px;">
-    <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/linear/true_9_pred_4_3.png?raw=true" alt="SVM Linear Misclassified" width="300"/>
-    <figcaption><b>Linear Kernel</b></figcaption>
-  </figure>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/poly/true_5_pred_4_1.png?raw=true" alt="SVM Polynomial Misclassified" width="300"/><br/>
+      <b>Polynomial Kernel</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/rbf/true_4_pred_0_2.png?raw=true" alt="SVM RBF Misclassified" width="300"/><br/>
+      <b>RBF Kernel</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/nirbinyamin/ML_project/blob/main/False%20predict/SVM/linear/true_9_pred_4_3.png?raw=true" alt="SVM Linear Misclassified" width="300"/><br/>
+      <b>Linear Kernel</b>
+    </td>
+  </tr>
+</table>
