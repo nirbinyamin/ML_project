@@ -220,16 +220,10 @@ def center_and_resize(img_array, canvas_size=280, target_size=28):
         print("No digit found.")
         return np.zeros((target_size, target_size), dtype=np.uint8)
 
-    print(f"Bounding box: top={top}, bottom={bottom}, left={left}, right={right}")
 
     # Crop
     img_cropped = img_array[top:bottom+1, left:right+1]
     img_cropped_inverted = 255 - img_cropped
-
-    # Save cropped debug
-    from PIL import Image
-    img_pil_cropped = Image.fromarray(img_cropped_inverted)
-    img_pil_cropped.save("debug_cropped.png")
 
     # Pad to canvas_size
     width, height = img_pil_cropped.size
