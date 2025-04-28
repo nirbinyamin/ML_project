@@ -33,9 +33,9 @@ This ensures consistent input formatting between the MNIST dataset and the user-
 > - For the **SVM**, only a subset of **10,000 images** was used for training to reduce runtime, as SVMs can be computationally intensive on large datasets.
 ---
 ## Project Structure
-```
 
 The project is organized into the following main files and directories:
+```
 ├── cnn_model.py # Defines the architecture of the CNN model
 ├── train_cnn.py # Handles CNN training, early stopping, and saving plots/metrics 
 ├── train_svm.py # Handles SVM training with Grid Search and saving models/plots 
@@ -50,5 +50,4 @@ The project is organized into the following main files and directories:
 ├── Plots/ # Generated training and evaluation plots (loss, accuracy, confusion matrices) 
 ├── Metrics/ # Evaluation metrics (accuracy, precision, recall, etc.) saved as text files 
 ├── UserDrawings/ # User-drawn digit images and corresponding normalized NumPy arrays
-
 ```
