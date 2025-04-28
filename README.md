@@ -126,7 +126,7 @@ Finally, **download** all the Python source files and set `ML_Project.py` as the
 
 When you first run the project, it will automatically extract and preprocess the raw MNIST data from the `data/` directory. The processed data will be saved as `.npy` files in the `data_numpy/` directory for faster loading in future runs, eliminating the need to extract and preprocess the dataset each time.
 
-### The Menu
+## The Menu
 When running `ML_Project.py`, you will be presented with the following menu:
 
 Menu:
@@ -172,7 +172,7 @@ Each option allows you to perform different tasks within the project:
 - **0. Exit**: Exits the program.
 
 
-### The Drawing Menu
+## The Drawing Menu
 
 Selecting option **10. Drawing Menu** from the main menu opens an interactive interface that allows you to draw your own digit and classify it using the trained CNN and SVM models.
 
@@ -184,7 +184,7 @@ Drawing Menu:
 4.Return to Main Menu
 
 
-#### Options Overview:
+### Options Overview:
 
 - **1. Draw and Save Digit**:  
   Opens a **280x280 pixel canvas** where you can draw a digit using your mouse.  
@@ -195,8 +195,10 @@ Drawing Menu:
     - **Center, pad, and resize** the digit to **28x28 pixels** (matching MNIST format) and save it as:
       - A normalized image (`images normalized/`).
       - A normalized **NumPy array** (`images_np_data/`), which is used for predictions.
-**The Drawing window:**
-![drawing window](https://github.com/user-attachments/assets/4515783b-0cd4-4c6d-a8f0-045a72188552)
+
+**The Drawing Window:**
+
+<img src="https://github.com/user-attachments/assets/4515783b-0cd4-4c6d-a8f0-045a72188552" alt="drawing window" width="400"/>
 
 - **2. Predict from Saved Drawing**:  
   Allows you to select one of your previously saved drawings (from `images_np_data/`) and classify it using:
@@ -209,11 +211,13 @@ Drawing Menu:
   - Choose between viewing **raw images** (`images not normalized/`) or **normalized images** (`images normalized/`).
   - Select a specific image to display it in a pop-up window.
 
-**Normalized Image:**
-![FOUR](https://github.com/user-attachments/assets/464d6aae-6334-458f-b74c-85779f413efb)
+**Normalized Image (28x28 resized for display):**
 
-**Non-Normalized Image:**
-![FOUR](https://github.com/user-attachments/assets/ce12ab30-55c0-4282-ac9f-d7b3f4f20099)
+<img src="https://github.com/user-attachments/assets/464d6aae-6334-458f-b74c-85779f413efb" alt="FOUR Normalized" width="150"/>
+
+**Non-Normalized Image (280x280):**
+
+<img src="https://github.com/user-attachments/assets/ce12ab30-55c0-4282-ac9f-d7b3f4f20099" alt="FOUR Non-Normalized" width="280"/>
 
 - **0. Return to Main Menu**:  
   Returns to the main project menu.
