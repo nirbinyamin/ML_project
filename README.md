@@ -306,8 +306,9 @@ Overall, the **CNN** model outperformed all SVM models both in accuracy and in c
 Additional evaluation outputs such as confusion matrices, training curves, and misclassified examples are available in the corresponding directories (`Plots/`, `Metrics/`, and `False predict/`).
 
 **confusion matrices**
-.
-.Plots/CNN/confusion_matrix.png
+![Confusion Matrix](https://github.com/your-username/your-repo-name/blob/main/Plots/CNN/confusion_matrix.png?raw=true)
+
+
 .
 
 .
