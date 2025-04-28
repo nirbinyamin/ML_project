@@ -183,8 +183,6 @@ Drawing Menu:
 3.View Saved Drawings
 4.Return to Main Menu
 
-![drawing window](https://github.com/user-attachments/assets/4515783b-0cd4-4c6d-a8f0-045a72188552)
-
 
 
 
@@ -199,6 +197,8 @@ Drawing Menu:
     - **Center, pad, and resize** the digit to **28x28 pixels** (matching MNIST format) and save it as:
       - A normalized image (`images normalized/`).
       - A normalized **NumPy array** (`images_np_data/`), which is used for predictions.
+**The Drawing window:**
+![drawing window](https://github.com/user-attachments/assets/4515783b-0cd4-4c6d-a8f0-045a72188552)
 
 - **2. Predict from Saved Drawing**:  
   Allows you to select one of your previously saved drawings (from `images_np_data/`) and classify it using:
@@ -210,7 +210,10 @@ Drawing Menu:
   Lets you browse and display your saved digit images:
   - Choose between viewing **raw images** (`images not normalized/`) or **normalized images** (`images normalized/`).
   - Select a specific image to display it in a pop-up window.
-
+**Normalized Image:**
+![FOUR](https://github.com/user-attachments/assets/464d6aae-6334-458f-b74c-85779f413efb)
+**Non-Normalized Image:**
+![FOUR](https://github.com/user-attachments/assets/ce12ab30-55c0-4282-ac9f-d7b3f4f20099)
 - **0. Return to Main Menu**:  
   Returns to the main project menu.
 
