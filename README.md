@@ -325,6 +325,13 @@ Additional evaluation outputs such as confusion matrices, training curves, and m
   <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/CNN/Validation Loss and Accuracy over Epochs.png?raw=true" alt="SVM Linear Confusion Matrix" width="400"/>
 </p>
 
+**SVM**
+<p align="center">
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_linear.png?raw=true" alt="SVM Polynomial Confusion Matrix" width="300"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_poly.png?raw=true" alt="SVM RBF Confusion Matrix" width="300"/>
+  <img src="https://github.com/nirbinyamin/ML_project/blob/main/Plots/SVM/grid_search_accuracy_rbf.png?raw=true" alt="SVM RBF Confusion Matrix" width="300"/>
+  
+</p>
 .
 .
 .
