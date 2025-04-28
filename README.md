@@ -208,6 +208,7 @@ Drawing Menu:
   Lets you browse and display your saved digit images:
   - Choose between viewing **raw images** (`images not normalized/`) or **normalized images** (`images normalized/`).
   - Select a specific image to display it in a pop-up window.
+
 **Normalized Image:**
 ![FOUR](https://github.com/user-attachments/assets/464d6aae-6334-458f-b74c-85779f413efb)
 
