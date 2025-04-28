@@ -170,3 +170,58 @@ Each option allows you to perform different tasks within the project:
   - View saved drawings.
 
 - **0. Exit**: Exits the program.
+
+
+### The Drawing Menu
+
+Selecting option **10. Drawing Menu** from the main menu opens an interactive interface that allows you to draw your own digit and classify it using the trained CNN and SVM models.
+
+Once inside the Drawing Menu, you will see:
+Drawing Menu:
+1.Draw and Save Digit
+2.Predict from Saved Drawing
+3.View Saved Drawings
+4.Return to Main Menu
+
+![drawing window](https://github.com/user-attachments/assets/4515783b-0cd4-4c6d-a8f0-045a72188552)
+
+
+
+
+#### Options Overview:
+
+- **1. Draw and Save Digit**:  
+  Opens a **280x280 pixel canvas** where you can draw a digit using your mouse.  
+  After drawing, you can:
+  - **Save the drawing** with a custom filename.
+  - The system will:
+    - Save the **original raw image** (280x280) in `UserDrawings/images/images not normalized/`.
+    - **Center, pad, and resize** the digit to **28x28 pixels** (matching MNIST format) and save it as:
+      - A normalized image (`images normalized/`).
+      - A normalized **NumPy array** (`images_np_data/`), which is used for predictions.
+
+- **2. Predict from Saved Drawing**:  
+  Allows you to select one of your previously saved drawings (from `images_np_data/`) and classify it using:
+  - The trained **CNN** model.
+  - The three **SVM** models (Linear, RBF, Polynomial).  
+  The predictions for each model are printed in the terminal.
+
+- **3. View Saved Drawings**:  
+  Lets you browse and display your saved digit images:
+  - Choose between viewing **raw images** (`images not normalized/`) or **normalized images** (`images normalized/`).
+  - Select a specific image to display it in a pop-up window.
+
+- **0. Return to Main Menu**:  
+  Returns to the main project menu.
+
+#### Normalization & Centering Process:
+When saving a drawn digit, the system:
+1. **Centers the digit**: Crops the bounding box around the digit, pads it back to **280x280**, and recenters it.
+2. **Resizes** to **28x28 pixels**.
+3. **Normalizes** the pixel values using the same **StandardScaler** used for the MNIST dataset (saved in `Scalers/mnist_scaler.pkl`).
+
+This ensures that your drawn digits are processed in the same way as the MNIST data, improving classification accuracy.
+
+
+
+
