@@ -1,4 +1,21 @@
 # MNIST and User Digit Drawing Classification using CNN and SVM
+
+## Setting the files
+
+In order to get the project running, you will need to download the following items:
+
+1. **Models** (provided as `Models.rar`)
+2. **Scalers** (provided as part of the models)
+3. **Data** (provided as `data.rar`)
+
+- **Extract** the contents of `Models.rar` into the `Models/` directory.
+- **Extract** the contents of `data.rar` into the `data/` directory.
+
+**Download** all the Python source files and set `ML_Project.py` as the main file to run the project.
+
+Finally, run the following line in your terminal `pip install -r requirements.txt`
+
+
 ## Introduction
 This project focuses on the classification of handwritten digits using two different machine learning approaches: a Convolutional Neural Network (CNN) and a Support Vector Machine (SVM).
 
@@ -108,19 +125,6 @@ The project is organized into the following main files and directories:
 ├── Metrics/ # Evaluation metrics (accuracy, precision, recall, etc.) saved as text files 
 ├── UserDrawings/ # User-drawn digit images and corresponding normalized NumPy arrays
 ```
-
-## Setting the files
-
-In order to get the project running, you will need to download the following items:
-
-1. **Models** (provided as `Models.rar`)
-2. **Scalers** (provided as part of the models)
-3. **Data** (provided as `data.rar`)
-
-- **Extract** the contents of `Models.rar` into the `Models/` directory.
-- **Extract** the contents of `data.rar` into the `data/` directory.
-
-Finally, **download** all the Python source files and set `ML_Project.py` as the main file to run the project.
 
 ## Running the project
 
